@@ -6,8 +6,8 @@ const measurements = fs.readFileSync("measurements.js", { encoding: "utf-8" });
 
 const arr = measurements
   .split("\n")
-  .filter((x) => x)
-  .map((x) => parseInt(x));
+  //.filter((x) => x)
+  .map((arr) => parseInt(arr));
 
 const part1 = () => {
   let increaseCount = 0;
@@ -34,4 +34,3 @@ const part2 = () => {
 };
 
 part1();
-part2();
